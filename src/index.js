@@ -1,17 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import reducer from "./reducers/index.js";
+import { configureStore } from "@reduxjs/toolkit";
+import { compose, applyMiddleware } from "redux";
+import App from "./App.js";
+import thunk from "redux-thunk";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const composeEnchancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const saveToLocalStorage = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem("state", serializedState);
+  } catch (e) {
+    console.log(e.message);
+  }
+};
+const loadFromLocalStorage = () => {
+  try {
+    const serializedState = localStorage.getItem("state");
+    if (serializedState === null) return undefined;
+    console.log("loadState=>", JSON.parse(serializedState));
+    return JSON.parse(serializedState);
+  } catch (e) {
+    console.log(e.message);
+    return undefined;
+  }
+};
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const store = configureStore({
+  reducer: reducer,
+  preloadedState: loadFromLocalStorage(),
+  middlewear: composeEnchancer(applyMiddleware(thunk)),
+});
+store.subscribe(() => {
+  saveToLocalStorage(store.getState());
+});
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

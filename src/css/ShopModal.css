@@ -1,0 +1,32 @@
+.shop_display_modal {
+  color: white;
+}
+.shop_display_modal .modal_wrapper {
+  background-color: rgb(219, 160, 128);
+  position: absolute;
+  height: 170px;
+  width: 160px;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.shop_display_modal .shop:hover .modal_wrapper {
+  visibility: visible;
+}
+
+.shop_display_modal ul li {
+  padding: 8px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.shop_display_modal ul li a {
+  color: white;
+  font-size: 14px;
+}
+
+.shop_display_modal li a:hover {
+  color: rgb(234, 196, 196);
+}

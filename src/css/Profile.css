@@ -1,0 +1,19 @@
+.profile {
+  width: 80vw;
+  height: 70vh;
+  border: 1px solid rgb(180, 165, 165);
+  box-shadow: rgba(236, 224, 224, 0.5);
+}
+
+.profile_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .user {
+  font-size: 100px;
+  color: rgb(75, 75, 130);
+}

@@ -1,0 +1,22 @@
+.images_container img {
+  width: 100vw;
+  height: 500px;
+  display: none;
+}
+
+.images_container img.active {
+  display: block;
+}
+
+.image_slider .dots_container {
+  text-align: center;
+}
+
+.image_slider .dots_container .circle {
+  color: rgb(200, 195, 200);
+  font-size: 10px;
+}
+
+.image_slider .dots_container .circle.active {
+  color: rgb(87, 82, 87);
+}

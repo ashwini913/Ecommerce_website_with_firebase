@@ -1,0 +1,54 @@
+body {
+  overflow: auto;
+}
+.banner_container {
+  width: 80vw;
+  height: 200px;
+  margin: 50px auto;
+  font-size: 2.5vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  background-image: linear-gradient(
+    to top,
+    rgb(223, 166, 128),
+    rgb(215, 176, 112),
+    rgb(215, 124, 44)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+}
+.discount_banner_container {
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.banner2,
+.banner3 {
+  width: 30%;
+  height: 200px;
+  display: inline-block;
+  font-size: 40px;
+  font-family: fantasy;
+  font-style: italic;
+  background-image: linear-gradient(
+    to top,
+    rgba(242, 13, 13, 0.552),
+    rgba(210, 15, 15, 0.552),
+    rgba(194, 63, 78, 0.552)
+  );
+  border-radius: 10px;
+  margin: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.banner2 p,
+.banner3 p {
+  margin-top: 70px;
+}

@@ -1,0 +1,18 @@
+.search_form input {
+  width: 15vw;
+  background-color: rgb(219, 160, 128);
+  border: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+.search_form button {
+  background-color: rgb(219, 160, 128);
+  border: 0px;
+  border-bottom: 1px solid white;
+}
+
+.search_icon {
+  color: white;
+}

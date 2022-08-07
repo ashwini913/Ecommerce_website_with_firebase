@@ -1,0 +1,35 @@
+.navbar_container {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(219, 160, 128);
+}
+
+.navbar_container .shopping.cart,
+.navbar_container .home,
+.bars.icon {
+  color: white;
+}
+
+.login a {
+  color: white;
+  font-size: 16px;
+}
+
+.cartLength {
+  display: inline-block;
+  height: 20px;
+  width: 24px;
+  border-radius: 50%;
+  color: white;
+  font-size: 15px;
+  background-color: rgb(26, 25, 116);
+  text-align: center;
+}
