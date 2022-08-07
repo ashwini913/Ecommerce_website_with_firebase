@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import products from "../API/products.js";
 
 export const fetch_products = () => async (dispatch) => {
