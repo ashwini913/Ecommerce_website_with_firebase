@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { fetch_searched_products } from "../actions/index.js";
 import { connect, useDispatch } from "react-redux";
 import ProductList from "./ProductsList.js";
-import "../css/ProductsDisplay.css";
 
 const ProductsDisplay = ({ searchText, searchedProducts }) => {
   const dispatch = useDispatch();

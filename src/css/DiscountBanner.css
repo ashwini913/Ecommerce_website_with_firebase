@@ -22,17 +22,16 @@ body {
   border-radius: 5px;
 }
 .discount_banner_container {
-  width: 100vw;
+  max-width: 100%;
   height: 200px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 80px;
+  display: flex;
+  justify-content: space-around;
 }
 .banner2,
 .banner3 {
   width: 30%;
   height: 200px;
-  display: inline-block;
   font-size: 40px;
   font-family: fantasy;
   font-style: italic;
@@ -43,12 +42,13 @@ body {
     rgba(194, 63, 78, 0.552)
   );
   border-radius: 10px;
-  margin: 30px;
   text-align: center;
   color: aliceblue;
 }
 
-.banner2 p,
-.banner3 p {
-  margin-top: 70px;
+.banner3,
+.banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

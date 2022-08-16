@@ -2,13 +2,10 @@
   position: fixed;
   width: 100vw;
   height: 40px;
-  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: rgb(219, 160, 128);
 }
 
