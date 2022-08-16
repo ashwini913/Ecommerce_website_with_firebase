@@ -39,16 +39,14 @@
   .single_product_view {
     display: flex;
     flex-direction: column;
-    margin: 60px;
   }
   .single_product_view img {
-    width: 50vw;
+    width: 300px;
     height: 400px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 30px;
   }
 }
 
-.star.checked {
+.star {
   color: rgb(241, 172, 21);
 }

@@ -43,16 +43,21 @@ const ProductView = ({ product, user }) => {
         <div className="product_info">
           <h1 className="product_name">{product.title}</h1>
           <div className="product_ratings">
-            <i
-              className={`ui star  icon `}
-              style={{
-                background: `linear-gradient(to bottom ,rgb(241, 172, 21))`,
-              }}
-            ></i>
-            <i className={`ui star  icon`}></i>
-            <i className={`ui star  icon`}></i>
-            <i className={`ui star  icon`}></i>
-            <i className={`ui star  icon`}></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="star"
+              fill="rgb(241, 172, 21)"
+              viewBox="0 0 24 24"
+              stroke="rgb(241, 172, 21)"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+              />
+            </svg>
+            <i className={`ui star  icon `}></i>
           </div>
 
           <h3 className="price">${product.price}</h3>

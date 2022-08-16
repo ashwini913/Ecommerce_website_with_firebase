@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyAgwQC9AjnVl8YLfCso2c0q27Dg6YqRFG8",
-  authDomain: "mock-309313.firebaseapp.com",
-  projectId: "mock-309313",
-  storageBucket: "mock-309313.appspot.com",
-  messagingSenderId: "582124324505",
-  appId: "1:582124324505:web:447b1ce8ee38d9d5249a08",
-  measurementId: "G-C7LMJX1G49",
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+  projectId: `${process.env.REACT_APP_PROJECT_ID}`,
+  storageBucket: `${process.env.REACT_APP_STORAGE_BUCKET}`,
+  messagingSenderId: `${process.env.REACT_APP_APP_ID}`,
+  appId: `${process.env.REACT_APP_API_KEY}`,
+  measurementId: `${process.env.REACT_APP_MEASUREMENT_ID}`,
 };
 //initailizing firebase
 const app = initializeApp(firebaseConfig);
