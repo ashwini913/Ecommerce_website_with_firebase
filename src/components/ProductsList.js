@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { add_to_cart } from "../actions/index.js";
 import { connect, useDispatch } from "react-redux";
-import "../css/ProductsDisplay.css";
+import "../css/ProductsList.css";
 
 const ProductList = ({ products }) => {
   const dispatch = useDispatch();

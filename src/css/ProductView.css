@@ -1,7 +1,9 @@
 .single_product_view {
-  margin-top: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
 }
 .single_product_view img {
   width: 20vw;
